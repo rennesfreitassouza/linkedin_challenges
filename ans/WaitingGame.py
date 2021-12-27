@@ -35,4 +35,4 @@ def waiting_game():
 def main():
     waiting_game()
 
-if '__name__' == '__main__': main()
+if __name__ == '__main__': main()
