@@ -1,5 +1,6 @@
 from itertools import product
 
+# https://www.linkedin.com/learning/python-code-challenges/solve-a-sudoku
 def solve_sudoku(puzzle): # backtrack approach
     for (row, col) in product(range(0, 9), repeat=2):
         if puzzle[row][col] == 0: # find an unassigned cell
