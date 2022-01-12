@@ -1,3 +1,3 @@
 # linkedin_challenges
 
-[Python video challenges](https://www.linkedin.com/learning/python-code-challenges)
+[My Python hands on practice code solutions](https://www.linkedin.com/learning/paths/python-hands-on-practice)
