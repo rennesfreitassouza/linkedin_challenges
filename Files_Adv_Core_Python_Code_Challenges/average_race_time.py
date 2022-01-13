@@ -4,7 +4,6 @@
 import re
 import datetime
 
-# challenge: https://www.linkedin.com/learning/advanced-core-python-code-challenges/find-a-runner-s-average-race-time
 def get_data():
     """Return content from the 10k_racetimes.txt file"""
     with open('Files_Adv_Core_Python_Code_Challenges/10k_racetimes.txt', 'rt') as file:
@@ -17,6 +16,7 @@ def get_rhines_times():
     j_r_rows = re.findall(r'([0-9]+[:][0-9]+[.]?[0-9]*)(.+Jennifer Rhines.+)', races)
     
     return [rt[0] for rt in j_r_rows]
+    
 
 def get_average():
     """Return Jennifer Rhines' average race time in the format:

@@ -6,7 +6,7 @@ def string(request):
     return request.param
 
 def test_sort_a_str(string):
-    from ans import SortAString
+    from Files_Python_Code_Challenges import SortAString
 
     retorno = SortAString.sort_words_w_queue(string)
     

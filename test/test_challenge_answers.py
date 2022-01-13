@@ -6,7 +6,7 @@ def value(request):
     return request.param
 
 def test_prime_values(value):
-    from ans import FindPrimeFactors
+    from Files_Python_Code_Challenges import FindPrimeFactors
 
     retorno = FindPrimeFactors.findAllPrimeFactors(value)
     result = 1

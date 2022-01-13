@@ -9,7 +9,7 @@ def item(request):
     return request.param
 
 def test_index_all(l_request, item):
-    from ans import FindAllListItems
+    from Files_Python_Code_Challenges import FindAllListItems
 
     retorno = FindAllListItems.index_all(l_request, item)
     if (item == 2):

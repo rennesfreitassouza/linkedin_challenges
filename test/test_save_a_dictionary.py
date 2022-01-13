@@ -5,7 +5,7 @@ def dictionary(request):
     return request.param
 
 def test_save_a_dictionary(dictionary):
-    from ans import SaveADictionary
+    from Files_Python_Code_Challenges import SaveADictionary
 
     retorno = SaveADictionary.main("fileName", dictionary)
     
