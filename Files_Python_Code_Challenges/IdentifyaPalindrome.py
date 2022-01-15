@@ -1,13 +1,13 @@
 
 import re
 
-# https://www.linkedin.com/learning/python-code-challenges/identify-a-palindrome
 def isaPalindrome(string):
+    '''https://www.linkedin.com/learning/python-code-challenges/identify-a-palindrome'''
     letters = ''.join(re.findall(r'(?ai)[a-z]+', string))
     
-    backwl = letters[::-1].lower()
-
-    return backwl == letters.lower()
+    # backwl = letters[::-1].lower()
+    backwl = ''.join(reversed(letters))
+    return backwl.lower() == letters.lower()
 
 def main():
     string = input("Type a word: ")
