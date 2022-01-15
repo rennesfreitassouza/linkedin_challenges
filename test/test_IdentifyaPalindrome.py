@@ -1,10 +1,10 @@
 import pytest
 
-@pytest.fixture(params=["level", "race car", "Go hang a salami - I'm a lasagna hog", "@@", "", "@race car_", "renneR", "+oo"])
+@pytest.fixture(params=["level", "race car", "Go hang a salami - I'm a lasagna hog", "@@", "", "@race car_", "renneR", "+oo",'sagas', 'Radar', 'Was it a cat I saw?', 'Eva, can I see bees in a cave?', 'Red rum, sir, is MURDER!!'])
 def palindrome_string(request):
     return request.param
 
-@pytest.fixture(params=["hello world", "rennes", "poo"])
+@pytest.fixture(params=["hello world", "rennes", "poo", "This should not not work", 'radars'])
 def not_a_palindrome_string(request):
     return request.param    
 
