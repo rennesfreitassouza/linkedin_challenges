@@ -11,8 +11,6 @@ from itertools import zip_longest, tee, chain
 def pairwise_offset(sequence=[], fillvalue='*', offset=0):
     '''https://www.linkedin.com/learning/\
 advanced-core-python-code-challenges/create-a-pairwise-offset'''
-    # it1, it2 = tee(sequence, 2)
-    # return zip_longest(it1, chain(fillvalue * offset, it2), fillvalue=fillvalue)
     another_sequence = [fillvalue] * offset
     another_sequence.extend(sequence)
     return zip_longest(sequence, another_sequence,
